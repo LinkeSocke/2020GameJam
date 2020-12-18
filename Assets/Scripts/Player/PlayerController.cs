@@ -37,5 +37,4 @@ public class PlayerController : MonoBehaviour
     {
         crouch = context.ReadValueAsButton();
     }
-
 }

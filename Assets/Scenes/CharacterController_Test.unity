@@ -384,8 +384,8 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!58 &1473171040
-CircleCollider2D:
+--- !u!61 &1473171040
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -397,9 +397,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00005064011, y: -0.015345499}
+  m_Offset: {x: 0, y: -0.015740788}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.06, y: 0.06}
+    newSize: {x: 0.06, y: 0.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.015034215
+  m_Size: {x: 0.06, y: 0.028518427}
+  m_EdgeRadius: 0
 --- !u!61 &1473171041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -459,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142d0206e8aaf6c46b007da638e3ca34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 400
+  jumpForce: 600
   crouchSpeed: 0.36
   movementSmoothing: 0.05
   airControl: 1
@@ -580,8 +590,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519849157}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.49, y: -0.29, z: -0.29519}
-  m_LocalScale: {x: 49.548405, y: 16.766941, z: 0}
+  m_LocalPosition: {x: -5.94, y: -1.68, z: -0.29519}
+  m_LocalScale: {x: 36.427715, y: 12.326962, z: 0}
   m_Children: []
   m_Father: {fileID: 1576606468}
   m_RootOrder: 2
@@ -805,8 +815,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984001451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.01, y: -2.5, z: -0.29519}
-  m_LocalScale: {x: 49.548405, y: 16.766941, z: 0}
+  m_LocalPosition: {x: -2.11, y: -2.85, z: -0.29519}
+  m_LocalScale: {x: 35.218136, y: 11.917647, z: 0}
   m_Children: []
   m_Father: {fileID: 1576606468}
   m_RootOrder: 1
