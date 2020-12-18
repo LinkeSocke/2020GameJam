@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
 
     public void Movement(InputAction.CallbackContext context)
     {
-        // Read Movement Vector
         movementXAxis = context.ReadValue<Vector2>().x * movementSpeed * Time.deltaTime;
     }
 
@@ -36,8 +35,7 @@ public class PlayerController : MonoBehaviour
 
     public void Crouch(InputAction.CallbackContext context)
     {
-        if (crouch) crouch = false;
-        else crouch = true;
+        crouch = context.ReadValueAsButton();
     }
 
 }
