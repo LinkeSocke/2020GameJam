@@ -14,7 +14,9 @@ public class PlayerController : MonoBehaviour
     private bool canInteract = false;
     [SerializeField] private float interactionDistance = 1.2f;
     [SerializeField] private LayerMask whatIsInteractable;
-    
+
+    List<Keycard> keycards = new List<Keycard>();
+
     private void Awake()
     {
         moveController = GetComponent<PlayerMovement>();
