@@ -39,4 +39,5 @@ public class PlayerController : MonoBehaviour
         if (crouch) crouch = false;
         else crouch = true;
     }
+
 }
