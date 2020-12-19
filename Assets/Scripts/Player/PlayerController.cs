@@ -16,11 +16,15 @@ public class PlayerController : MonoBehaviour
 
     private List<Keycard> keycards = new List<Keycard>();
 
+    [SerializeField] private Transform flashlight = null;
+    [SerializeField] private float angleOffset = -90f;
+    private bool facingRight = false;
+    private Camera cam;
+
     private void Awake()
     {
         moveController = GetComponent<PlayerMovement>();
-
-        // keycards.Add(new Keycard() { keycardType = EKeycardType.BLUE });
+        cam = Camera.main;
     }
 
     private void FixedUpdate()
@@ -36,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
+        if (!context.started) return;
         jump = true;
     }
 
@@ -68,6 +73,38 @@ public class PlayerController : MonoBehaviour
         {
             interactable.Interact();
         }
+    }
+
+    public void Look(InputAction.CallbackContext context)
+    {
+        var pos = context.action.ReadValue<Vector2>();
+        var flashlightPos = Camera.main.WorldToScreenPoint(flashlight.transform.position);
+        var dir = pos - new Vector2(flashlightPos.x, flashlightPos.y);
+        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + angleOffset;
+
+        var bodyPost = cam.WorldToScreenPoint(transform.position);
+        var bodyDir = pos - new Vector2(bodyPost.x, bodyPost.y);
+
+        if (bodyDir.x > 0 && facingRight)
+        {
+            Flip();
+        } else if(bodyDir.x < 0 && !facingRight)
+        {
+            Flip();
+        }
+
+        flashlight.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+
+    public void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        facingRight = !facingRight;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
     public List<Keycard> GetKeycards()
