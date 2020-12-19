@@ -392,8 +392,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 977d87f557d901c489c94538f4a4df93, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0c295fc54735ae347b7354fcecdae6d9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuzeActionOptions: {fileID: 11400000, guid: b28f9ab309269b048893707da78474da, type: 2}
-  currentFuzeAction: {fileID: 11400000, guid: b674ee1bc7985504cb3acde1b6dc1312, type: 2}
+  currentFuzeAction: {fileID: 11400000, guid: ed8793a54abaff643a53c695d3a748ba, type: 2}
 --- !u!1 &812289874
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,17 +533,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 2064916234097673511, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: -1967631576421560919, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 8056856818456041789, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: 3279352641294131588, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: 3837173908680883260, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 4502412055082496612, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 4754684134866288074, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_PointAction: {fileID: 4832947989973584328, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_MoveAction: {fileID: 2419879097610228966, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_SubmitAction: {fileID: 4391983768702790821, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_CancelAction: {fileID: 4777272191098719716, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_LeftClickAction: {fileID: 1225486424346436407, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_MiddleClickAction: {fileID: 9025278444919223038, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_RightClickAction: {fileID: -2867010872111780200, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_ScrollWheelAction: {fileID: 8595775643914161935, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 3188946990877019248, guid: cc759cc8061184747b5a63da6a179925, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 5523370203740514996, guid: cc759cc8061184747b5a63da6a179925, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
 --- !u!114 &1632534447
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 696401721}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1632534448
@@ -787,7 +787,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 0c295fc54735ae347b7354fcecdae6d9, type: 3}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -816,7 +816,6 @@ GameObject:
   - component: {fileID: 1757516263}
   - component: {fileID: 1757516262}
   - component: {fileID: 1757516261}
-  - component: {fileID: 1757516265}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -904,21 +903,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1757516265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757516260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!1 &1865307980
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuzeActionOptions: {fileID: 11400000, guid: b28f9ab309269b048893707da78474da, type: 2}
-  currentFuzeAction: {fileID: 11400000, guid: ed8793a54abaff643a53c695d3a748ba, type: 2}
+  currentFuzeAction: {fileID: 11400000, guid: f5825bee4f8a95245a7b4e403421dd41, type: 2}
 --- !u!114 &1865307983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,8 +1031,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0c295fc54735ae347b7354fcecdae6d9, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0226eb48e4ca1304daf1726d19e2506e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
