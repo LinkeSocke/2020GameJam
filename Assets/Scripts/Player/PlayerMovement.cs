@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,8 +14,10 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private Transform groundCheck;                           // A position marking where to check if the player is grounded.
 	[SerializeField] private Transform ceilingCheck;                          // A position marking where to check for ceilings
 	[SerializeField] private Collider2D crouchDisableCollider;                // A collider that will be disabled when crouching
+    [SerializeField] private Light2D crouchDisableLight;
+    [SerializeField] private Collider2D crouchEnableCollider;                // A collider that will be enabled when crouching
 
-	private const float GROUNDED_RADIUS = .2f;		// Radius of the overlap circle to determine if grounded
+    private const float GROUNDED_RADIUS = .2f;		// Radius of the overlap circle to determine if grounded
 	private const float CEILING_RADIUS = .2f;		// Radius of the overlap circle to determine if the player can stand up
 	private bool grounded;						// Whether or not the player is grounded.
 	private Rigidbody2D rgbd2D;
@@ -91,14 +94,18 @@ public class PlayerMovement : MonoBehaviour
 				// Disable one of the colliders when crouching
 				if (crouchDisableCollider != null)
 					crouchDisableCollider.enabled = false;
-			}
+                    crouchDisableLight.enabled = false;
+                    crouchEnableCollider.enabled = true;
+            }
 			else
 			{
 				// Enable the collider when not crouching
 				if (crouchDisableCollider != null)
 					crouchDisableCollider.enabled = true;
+                    crouchDisableLight.enabled = true;
+                    crouchEnableCollider.enabled = false;
 
-				if (wasCrouching)
+                if (wasCrouching)
 				{
 					wasCrouching = false;
 					OnCrouchEvent.Invoke(false);

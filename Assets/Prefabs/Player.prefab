@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142d0206e8aaf6c46b007da638e3ca34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 200
+  jumpForce: 550
   crouchSpeed: 0.36
   movementSmoothing: 0.05
   airControl: 1
@@ -99,6 +99,8 @@ MonoBehaviour:
   groundCheck: {fileID: 625436496340505895}
   ceilingCheck: {fileID: 625436497860139795}
   crouchDisableCollider: {fileID: 625436497006709893}
+  crouchDisableLight: {fileID: 6963354189311924575}
+  crouchEnableCollider: {fileID: 625436497006709892}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -118,8 +120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 15
-  jump: 0
-  crouch: 0
   interactionDistance: 1.2
   interactionOffset: 1
   whatIsInteractable:
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.035472065, y: 2.86}
+  m_Offset: {x: 0.035472095, y: 2.096702}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -175,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.355851, y: 2.6791687}
+  m_Size: {x: 1.355851, y: 4.205764}
   m_EdgeRadius: 0
 --- !u!61 &625436497006709892
 BoxCollider2D:
@@ -184,13 +184,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625436497006709944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03547207, y: 1}
+  m_Offset: {x: 0.10882032, y: 0.5061233}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -201,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 1.355851, y: 2}
+  m_Size: {x: 3.0673053, y: 1.0122466}
   m_EdgeRadius: 0
 --- !u!114 &625436497006709946
 MonoBehaviour:
@@ -312,6 +312,46 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 6778bffd-5f6c-41ea-98f3-632dcd6c1b98
     m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 063ee203-fe0d-4ff7-bf0f-3edc86bff5e4
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1145a6a6-ad44-4a8a-ad2d-4c3a99ad07b6
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a7efa0dd-7a00-4fa1-969c-21b99a31f3d0
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f61b2ae6-7da6-4d65-848b-9eb729e5bf39
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dcb3db54-e1ff-456c-b2fc-33921eae8e28
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2c4a9f95-b924-47cb-a9af-f1268f1a42f5
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 292c48eb-2f0d-4ed3-9eef-25b514c8d6d1
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 253d4c01-67cf-4410-8c0c-df575b8575be
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d4d02738-3e5f-4a32-ba06-3c6a24002a4d
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7d069dac-dc11-4064-af0e-985b5b8593d8
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -354,8 +394,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -593214519
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 43b470a5e2ce1a64f8a0cb9d7b1db75f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -683,7 +723,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.5
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000002718a703c943a4dcdffa9299478b45ee
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -756,7 +796,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeOpacity: 0.15
   m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 21300000, guid: 348721f4751bc3340ac9265a1cc7f327, type: 3}
+  m_LightCookieSprite: {fileID: 21300000, guid: bb199b777e97fd047b0670240ee1d688, type: 3}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
@@ -832,8 +872,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8343459818900563274}
-  m_LocalRotation: {x: -0, y: -0, z: 0.00491869, w: 0.9999879}
-  m_LocalPosition: {x: 0.04, y: 0.98, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0038897197, w: 0.99999243}
+  m_LocalPosition: {x: 0.04, y: 0.819, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 625436497006709888}
@@ -857,7 +897,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.6
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000002718a703c943a4dcdffa9299478b45ee
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -867,7 +907,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 0.85
+  m_PointLightOuterRadius: 0.93815285
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
