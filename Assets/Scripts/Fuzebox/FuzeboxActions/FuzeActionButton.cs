@@ -30,6 +30,8 @@ public class FuzeActionButton : MonoBehaviour
                 Debug.LogWarning("Fuze Options in Button are empty.", gameObject);
             else
             {
+                currOptionIndex = ((int)(Random.value * 100)) % fuzeActionOptionsList.Length;
+
                 if (!fuzeActionOptionsList[currOptionIndex].GetType().Equals(typeof(FuzeAction)))
                     Debug.LogWarning($"Fuze Options contians Element that isn't a Fuze Action. At Index {currOptionIndex}", gameObject);
                 else
@@ -53,5 +55,10 @@ public class FuzeActionButton : MonoBehaviour
             currentFuzeAction = (FuzeAction)fuzeActionOptionsList[currOptionIndex];
             btnImage.sprite = currentFuzeAction.GetFuzeImage();
         }
+    }
+
+    public FuzeAction GetSelectedFuze()
+    {
+        return currentFuzeAction;
     }
 }
