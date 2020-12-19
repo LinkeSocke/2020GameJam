@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
+        if (!context.started) return;
         jump = true;
     }
 
