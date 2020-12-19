@@ -10,6 +10,9 @@ public class Breaking : MonoBehaviour, IBreakable
     [SerializeField]
     protected GameObject brokenObject;
 
+    [SerializeField]
+    protected Collider2D[] colliders;
+
     protected bool broken = false;
 
     public virtual void Break()
@@ -24,7 +27,6 @@ public class Breaking : MonoBehaviour, IBreakable
                 Destroy(body);
             }
 
-            var colliders = GetComponents<Collider2D>();
             foreach(var collider in colliders)
             {
                 Destroy(collider);
@@ -35,13 +37,13 @@ public class Breaking : MonoBehaviour, IBreakable
 
             System.Random rdm = new System.Random();
 
-            var children = brokenObject.transform.GetComponentsInChildren<Transform>();
-            foreach (var child in children)
-            {
-                Destroy(child.gameObject, rdm.Next(5, 10));
-            }
+            //var children = brokenObject.transform.GetComponentsInChildren<Transform>();
+            //foreach (var child in children)
+            //{
+            //    Destroy(child.gameObject, rdm.Next(5, 10));
+            //}
 
-            Destroy(this.gameObject, 15);
+            //Destroy(this.gameObject, 15);
         }
     }
 }
