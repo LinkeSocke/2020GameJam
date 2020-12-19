@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142d0206e8aaf6c46b007da638e3ca34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 200
+  jumpForce: 550
   crouchSpeed: 0.36
   movementSmoothing: 0.05
   airControl: 1
@@ -118,8 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 15
-  jump: 0
-  crouch: 0
   interactionDistance: 1.2
   interactionOffset: 1
   whatIsInteractable:
@@ -312,6 +310,46 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 6778bffd-5f6c-41ea-98f3-632dcd6c1b98
     m_ActionName: Player/Interact[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 063ee203-fe0d-4ff7-bf0f-3edc86bff5e4
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1145a6a6-ad44-4a8a-ad2d-4c3a99ad07b6
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a7efa0dd-7a00-4fa1-969c-21b99a31f3d0
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f61b2ae6-7da6-4d65-848b-9eb729e5bf39
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dcb3db54-e1ff-456c-b2fc-33921eae8e28
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2c4a9f95-b924-47cb-a9af-f1268f1a42f5
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 292c48eb-2f0d-4ed3-9eef-25b514c8d6d1
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 253d4c01-67cf-4410-8c0c-df575b8575be
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d4d02738-3e5f-4a32-ba06-3c6a24002a4d
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7d069dac-dc11-4064-af0e-985b5b8593d8
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
