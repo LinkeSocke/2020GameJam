@@ -9,18 +9,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float movementSpeed = 40f;
 
     private float movementXAxis = 0f;
-    private bool jump = false;
-    private bool crouch = false;
+    [SerializeField] private bool jump = false;
+    [SerializeField] private bool crouch = false;
     [SerializeField] private float interactionDistance = 1.2f;
     [SerializeField] private LayerMask whatIsInteractable;
 
     private List<Keycard> keycards = new List<Keycard>();
 
+    Vector2 lookPos = Vector2.zero;
+
     private void Awake()
     {
         moveController = GetComponent<PlayerMovement>();
-
-        // keycards.Add(new Keycard() { keycardType = EKeycardType.BLUE });
     }
 
     private void FixedUpdate()
@@ -70,6 +70,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void Look(InputAction.CallbackContext context)
+    {
+        var pos = context.action.ReadValue<Vector2>();
+        var test = Camera.main.WorldToScreenPoint(transform.position);
+        lookPos = pos - new Vector2(test.x, test.y);
+    }
+
     public List<Keycard> GetKeycards()
     {
         return keycards;
@@ -83,5 +90,6 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, interactionDistance);
+        Gizmos.DrawRay(transform.position, lookPos);
     }
 }
