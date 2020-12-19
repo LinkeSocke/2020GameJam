@@ -11,15 +11,16 @@ public class PlayerController : MonoBehaviour
     private float movementXAxis = 0f;
     private bool jump = false;
     private bool crouch = false;
-    private bool canInteract = false;
     [SerializeField] private float interactionDistance = 1.2f;
     [SerializeField] private LayerMask whatIsInteractable;
 
-    List<Keycard> keycards = new List<Keycard>();
+    private List<Keycard> keycards = new List<Keycard>();
 
     private void Awake()
     {
         moveController = GetComponent<PlayerMovement>();
+
+        // keycards.Add(new Keycard() { keycardType = EKeycardType.BLUE });
     }
 
     private void FixedUpdate()
@@ -67,6 +68,16 @@ public class PlayerController : MonoBehaviour
         {
             interactable.Interact();
         }
+    }
+
+    public List<Keycard> GetKeycards()
+    {
+        return keycards;
+    }
+
+    public void AddKeycard(Keycard keycard)
+    {
+        keycards.Add(keycard);
     }
 
     private void OnDrawGizmos()
