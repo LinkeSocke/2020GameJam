@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactable
   - Ground
+  - Spawnpoint
+  - Light
   layers:
   - Default
   - TransparentFX

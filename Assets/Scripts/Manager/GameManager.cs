@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnLevelStart;
     public UnityEvent OnLevelFinished;
 
+    [SerializeField] private GameObject playerPrefab = null;
+    private GameObject player = null;
+    private Transform spawnpoint = null;
+    private string loadedScene;
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -32,6 +37,11 @@ public class GameManager : MonoBehaviour
             OnLevelStart = new UnityEvent();
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
     public void FinishLevel()
     {
         OnLevelFinished.Invoke();
@@ -40,19 +50,26 @@ public class GameManager : MonoBehaviour
     public void StartLevel()
     {
         OnLevelStart.Invoke();
+
+        spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+
+        if (spawnpoint == null) return;
+
+        player = Instantiate(playerPrefab, spawnpoint.position, Quaternion.identity) as GameObject;
     }
 
-    public void LoadScene(string scene)
+    public void LoadLevel(string scene)
     {
-        StartCoroutine(loadSceneAsync(scene));
+        loadedScene = scene;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
 
-    private IEnumerator loadSceneAsync(string scene)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
-        while (!asyncLoad.isDone)
+        Debug.Log("OnSceneLoaded: " + scene.path);
+        if(scene.path.Equals(loadedScene))
         {
-            yield return null;
+            StartLevel();
         }
     }
 }
