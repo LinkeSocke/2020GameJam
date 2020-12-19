@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8855725}
   - component: {fileID: 8855724}
   - component: {fileID: 8855723}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottle02_Broken_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8855721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2679753, y: 3.3362823, z: 136.6591}
-  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1}
+  m_LocalPosition: {x: -0.045, y: 0.324, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7308721426102267586}
   m_RootOrder: 1
@@ -97,8 +97,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.55468744, y: 0.60156244}
+  m_Offset: {x: -0.011743704, y: 0}
+  m_Size: {x: 0.43725172, y: 0.60156244}
   m_Direction: 0
 --- !u!50 &8855723
 Rigidbody2D:
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1767923781}
   - component: {fileID: 1767923780}
   - component: {fileID: 1767923779}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottle02_Broken_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,8 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767923777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2679753, y: 3.3362823, z: 136.6591}
-  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1}
+  m_LocalPosition: {x: 0.163, y: -0.292, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7308721426102267586}
   m_RootOrder: 0
@@ -218,9 +218,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.9140624, y: 0.64843744}
-  m_Direction: 0
+  m_Offset: {x: 0.030967446, y: 0.002063683}
+  m_Size: {x: 0.8025809, y: 0.53273463}
+  m_Direction: 1
 --- !u!50 &1767923779
 Rigidbody2D:
   serializedVersion: 4
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 1809596969}
   - component: {fileID: 1809596968}
   - component: {fileID: 1809596967}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottle02_Broken_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,8 +269,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809596965}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.2679753, y: 3.3362823, z: 136.6591}
-  m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1}
+  m_LocalPosition: {x: -0.05, y: -0.716, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7308721426102267586}
   m_RootOrder: 2
@@ -339,9 +339,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.8281249, y: 0.42968744}
-  m_Direction: 0
+  m_Offset: {x: -0.000000005305812, y: -0.044508383}
+  m_Size: {x: 0.8281251, y: 0.34067187}
+  m_Direction: 1
 --- !u!50 &1809596967
 Rigidbody2D:
   serializedVersion: 4
@@ -358,6 +358,27 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0.8
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!50 &5305124417181536236
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308721426266681312}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -382,6 +403,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3238754320839076096, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3238754321028491291, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -396,15 +421,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3238754321028491291, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3607855
+      value: 6.33
       objectReference: {fileID: 0}
     - target: {fileID: 3238754321028491291, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0017695
+      value: -3.534
       objectReference: {fileID: 0}
     - target: {fileID: 3238754321028491291, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -136.6591
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3238754321028491291, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -438,8 +463,69 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle2_BreakOnTouch
       objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -0.008346241
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.507573
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.39908338
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.04529625
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -0.37892017
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -0.74374676
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 0.41808298
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: -0.7437467
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 0.4358816
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238754321041832721, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: 0.11889301
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214812185011705892, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214812185011705892, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329585396858955421, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: power
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329585396858955421, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+      propertyPath: upwardsModifier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+--- !u!1 &7308721426266681312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3238754321028491301, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
+  m_PrefabInstance: {fileID: 5305124417414842309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7308721426102267586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3238754320839076103, guid: c7eb9965780076a4b9e6b02a3a02061b, type: 3}
