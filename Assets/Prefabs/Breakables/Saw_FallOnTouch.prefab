@@ -80,7 +80,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &2176265350734757324
 GameObject:
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 2176265350734757360}
   - component: {fileID: 2176265350734757361}
   - component: {fileID: 2176265350734757326}
+  - component: {fileID: 8068301566224151396}
   m_Layer: 12
   m_Name: Saw_FallOnTouch
   m_TagString: Untagged
@@ -219,3 +220,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8068301566224151396}
+        m_TargetAssemblyTypeName: SpriteRendererMasking, Assembly-CSharp
+        m_MethodName: DisableMasking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8068301566224151396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2176265350734757324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616dfbd1f3d1d004dafca478c763b148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 2176265349820069316}
