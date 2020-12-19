@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool jump = false;
     [SerializeField] private bool crouch = false;
     [SerializeField] private float interactionDistance = 1.2f;
+    [SerializeField] private float interactionOffset = 0f;
     [SerializeField] private LayerMask whatIsInteractable;
 
     private List<Keycard> keycards = new List<Keycard>();
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
         if (!context.started) return;
 
         IInteractable interactable = null;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactionDistance, whatIsInteractable);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(new Vector3(transform.position.x, transform.position.y + interactionOffset, transform.position.z), interactionDistance, whatIsInteractable);
         if (colliders == null || colliders.Length <= 0) return;
 
         float leastDistance = Vector3.Distance(transform.position, colliders[0].transform.position);
@@ -119,6 +120,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(transform.position, interactionDistance);
+        Gizmos.DrawWireSphere(new Vector3(transform.position.x, transform.position.y + interactionOffset, transform.position.z), interactionDistance);
     }
 }
