@@ -1,11 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FuzeAction : IFuzeboxAction
+[CreateAssetMenu(fileName = "FuzeAction", menuName = "ScriptableObjects/Fuzebox/FuzeAction", order = 1)]
+public class FuzeAction : FuzeboxAction
 {
-    public string GetValue()
+    [SerializeField]
+    private Sprite fuzeImage;
+
+    public Sprite GetFuzeImage()
     {
-        throw new System.NotImplementedException();
+        return fuzeImage;
     }
 }
