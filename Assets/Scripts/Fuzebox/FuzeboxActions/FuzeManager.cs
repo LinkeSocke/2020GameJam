@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 [ExecuteAlways]
-public class FuzeManager : MonoBehaviour, IFuzeboxActionManager
+public class FuzeManager : FuzeboxActionManager
 {
     [SerializeField]
     FuzeActionButton[] fuzeSlots;
@@ -43,7 +43,7 @@ public class FuzeManager : MonoBehaviour, IFuzeboxActionManager
         return selectedFuzes;
     }
 
-    public FuzeboxActionList GetActionsSequenceList()
+    public override FuzeboxActionList GetActionsSequenceList()
     {
         return GetFuzeList();
     }
