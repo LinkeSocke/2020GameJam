@@ -156,7 +156,7 @@ public class PlayerController : MonoBehaviour
         keycards.Add(keycard);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(new Vector3(transform.position.x, transform.position.y + interactionOffset, transform.position.z), interactionDistance);
     }
