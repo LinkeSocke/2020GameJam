@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,5 +40,19 @@ public class GameManager : MonoBehaviour
     public void StartLevel()
     {
         OnLevelStart.Invoke();
+    }
+
+    public void LoadScene(string scene)
+    {
+        StartCoroutine(loadSceneAsync(scene));
+    }
+
+    private IEnumerator loadSceneAsync(string scene)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
