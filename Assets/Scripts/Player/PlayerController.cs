@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
     public void AddKeycard(Keycard keycard)
     {
         keycards.Add(keycard);
-        UIManager.Instance.UpdateKeycardList(keycards);
+        UIManager.Instance.AddKeycardToUI(keycard);
     }
 
     private void OnDrawGizmosSelected()

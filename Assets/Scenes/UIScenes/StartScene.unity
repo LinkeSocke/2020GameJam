@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScene1: Assets/Scenes/TestScene.unity
-  playerScene2: Assets/Scenes/TestScene 1.unity
+  playerScene2: 
   startMenu: {fileID: 1834758248}
   slideShowContainer: {fileID: 2133472838}
   slideShow: {fileID: 1727626802}

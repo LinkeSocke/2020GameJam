@@ -11,7 +11,8 @@ public class UIManager : MonoBehaviour
     private static UIManager _instance;
     public static UIManager Instance { get { return _instance; } }
 
-    private List<Keycard> collectedKeycards = new List<Keycard>();
+    [SerializeField] private Transform collectibleParent;
+    [SerializeField] private GameObject collectibleUIItem;
 
     private void Awake()
     {
@@ -25,9 +26,13 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void UpdateKeycardList(List<Keycard> keycards)
+    public void AddKeycardToUI(Keycard keycards)
     {
-        collectedKeycards = keycards;
+        var newItem = Instantiate(collectibleUIItem, collectibleParent);
+        newItem.GetComponent<Image>().sprite = keycards.keycardSprite;
+
+        // TESTING
+        newItem.GetComponent<Image>().color = keycards.keycardColor;
     }
 }
  
