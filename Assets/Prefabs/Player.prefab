@@ -602,7 +602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7159138834147519991}
   m_LocalRotation: {x: -0, y: -0, z: -0.70794743, w: 0.70626515}
-  m_LocalPosition: {x: 0.65, y: 0.416, z: 0}
+  m_LocalPosition: {x: 0, y: 0.416, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 625436497006709888}
@@ -627,11 +627,11 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeOpacity: 0.15
   m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
+  m_LightCookieSprite: {fileID: 21300000, guid: 348721f4751bc3340ac9265a1cc7f327, type: 3}
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0.476
+  m_ShadowIntensity: 0.409
   m_ShadowVolumeIntensity: 0.115
   m_PointLightInnerAngle: 66.4
   m_PointLightOuterAngle: 86.8
