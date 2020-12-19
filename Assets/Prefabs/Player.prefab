@@ -40,11 +40,11 @@ GameObject:
   m_Component:
   - component: {fileID: 625436497006709888}
   - component: {fileID: 625436497006709894}
+  - component: {fileID: 625436497006709947}
   - component: {fileID: 625436497006709895}
   - component: {fileID: 625436497006709893}
   - component: {fileID: 625436497006709892}
   - component: {fileID: 625436497006709946}
-  - component: {fileID: 625436497006709947}
   - component: {fileID: -3281616810793882912}
   - component: {fileID: 3833125641870851050}
   m_Layer: 9
@@ -72,6 +72,8 @@ Transform:
   - {fileID: 3041295303683312615}
   - {fileID: 4395795590761366154}
   - {fileID: 7766935238276700769}
+  - {fileID: 884494720335098311}
+  - {fileID: 8208869746279697925}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103,6 +105,31 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &625436497006709947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625436497006709944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873786804972b8c449ab060f843fddbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 15
+  jump: 0
+  crouch: 0
+  interactionDistance: 1.2
+  interactionOffset: 1
+  whatIsInteractable:
+    serializedVersion: 2
+    m_Bits: 1024
+  flashlight: {fileID: 9039693991551066925}
+  angleOffset: -90
+  anim: {fileID: 3833125641870851050}
+  crouchedLightPosition: {fileID: 884494720335098311}
+  standingLightPosition: {fileID: 8208869746279697925}
 --- !u!50 &625436497006709895
 Rigidbody2D:
   serializedVersion: 4
@@ -290,28 +317,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &625436497006709947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625436497006709944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873786804972b8c449ab060f843fddbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 15
-  jump: 0
-  crouch: 0
-  interactionDistance: 1.2
-  interactionOffset: 1
-  whatIsInteractable:
-    serializedVersion: 2
-    m_Bits: 1024
-  flashlight: {fileID: 9039693991551066925}
-  angleOffset: -90
 --- !u!212 &-3281616810793882912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -373,7 +378,7 @@ Animator:
   m_GameObject: {fileID: 625436497006709944}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f288dd2036b7954c89ceb65a33518b3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -484,6 +489,36 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &2378829746241027712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884494720335098311}
+  m_Layer: 0
+  m_Name: CrouchLightPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &884494720335098311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2378829746241027712}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0.68, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 625436497006709888}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3257740453167709719
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +778,36 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &7863485912450834865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8208869746279697925}
+  m_Layer: 0
+  m_Name: StandingLightPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8208869746279697925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863485912450834865}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7614036, w: 0.6482782}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 625436497006709888}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &8343459818900563274
 GameObject:
   m_ObjectHideFlags: 0

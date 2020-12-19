@@ -22,6 +22,12 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = false;
     private Camera cam;
 
+    [SerializeField] private Animator anim = null;
+    private const string MOVEMENT_STATE = "MovementState";
+
+    [SerializeField] private Transform crouchedLightPosition = null;
+    [SerializeField] private Transform standingLightPosition = null;
+
     private void Awake()
     {
         moveController = GetComponent<PlayerMovement>();
@@ -30,6 +36,29 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (movementXAxis != 0)
+        {
+            if (crouch)
+            {
+                anim.SetInteger(MOVEMENT_STATE, 3);
+            }
+            else
+            {
+                anim.SetInteger(MOVEMENT_STATE, 1);
+            }
+        }
+        else
+        {
+            if (crouch)
+            {
+                anim.SetInteger(MOVEMENT_STATE, 2);
+            }
+            else
+            {
+                anim.SetInteger(MOVEMENT_STATE, 0);
+            }
+        }
+
         moveController.Move(movementXAxis, crouch, jump);
         jump = false;
     }
@@ -48,6 +77,14 @@ public class PlayerController : MonoBehaviour
     public void Crouch(InputAction.CallbackContext context)
     {
         crouch = context.ReadValueAsButton();
+        if (crouch)
+        {
+            flashlight.transform.position = crouchedLightPosition.position;
+        }
+        else
+        {
+            flashlight.transform.position = standingLightPosition.position;
+        }
     }
 
     public void Interact(InputAction.CallbackContext context)
@@ -78,6 +115,7 @@ public class PlayerController : MonoBehaviour
 
     public void Look(InputAction.CallbackContext context)
     {
+
         var pos = context.action.ReadValue<Vector2>();
         var flashlightPos = Camera.main.WorldToScreenPoint(flashlight.transform.position);
         var dir = pos - new Vector2(flashlightPos.x, flashlightPos.y);
