@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StartMenuManager : MonoBehaviour
 {
-    [Scene] public string PlayerScene;
+    [Scene] public string playerScene1;
+    [Scene] public string playerScene2;
 
     [SerializeField] private Transform startMenu = null;
 
@@ -46,9 +48,24 @@ public class StartMenuManager : MonoBehaviour
 
     public void LoadPlayer()
     {
-        if (string.IsNullOrEmpty(PlayerScene)) return;
+        int rand =  Mathf.RoundToInt(Random.Range(1f, 2f));
+        string selectedScene = string.Empty;
 
-        GameManager.Instance.LoadScene(PlayerScene);
+        switch(rand)
+        {
+            case 1:
+                if (string.IsNullOrEmpty(playerScene1)) return;
+                selectedScene = playerScene1;
+                break;
+            case 2:
+                if (string.IsNullOrEmpty(playerScene2)) return;
+                selectedScene = playerScene2;
+                break;
+        }
+
+        if (string.IsNullOrEmpty(selectedScene)) return;
+
+        GameManager.Instance.LoadLevel(selectedScene);
     }
 
     public void Quit()

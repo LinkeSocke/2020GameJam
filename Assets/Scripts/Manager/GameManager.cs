@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,14 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent OnLevelStart;
     public UnityEvent OnLevelFinished;
+
+    [SerializeField] private GameObject playerPrefab = null;
+    private GameObject player = null;
+    private Transform spawnpoint = null;
+    private string loadedScene;
+
+    private List<IBreakable> brokenObjects = new List<IBreakable>();
+    private int brokenObjectTotal = 0;
 
     private void Awake()
     {
@@ -32,27 +41,47 @@ public class GameManager : MonoBehaviour
             OnLevelStart = new UnityEvent();
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
     public void FinishLevel()
     {
         OnLevelFinished.Invoke();
+        Debug.Log($"{brokenObjects.Count} / {brokenObjectTotal}");
     }
 
     public void StartLevel()
     {
         OnLevelStart.Invoke();
+
+        spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
+
+        if (spawnpoint == null) return;
+
+        player = Instantiate(playerPrefab, spawnpoint.position, Quaternion.identity) as GameObject;
+
+        brokenObjectTotal = GameObject.FindObjectsOfType<Breaking>().Length;
     }
 
-    public void LoadScene(string scene)
+    public void AddBrokenObject(IBreakable brokenObject)
     {
-        StartCoroutine(loadSceneAsync(scene));
+        brokenObjects.Add(brokenObject);
     }
 
-    private IEnumerator loadSceneAsync(string scene)
+    public void LoadLevel(string scene)
     {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
-        while (!asyncLoad.isDone)
+        loadedScene = scene;
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.path);
+        if(scene.path.Equals(loadedScene))
         {
-            yield return null;
+            StartLevel();
         }
     }
 }

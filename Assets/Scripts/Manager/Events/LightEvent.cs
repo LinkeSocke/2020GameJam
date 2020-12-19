@@ -7,9 +7,19 @@ public class LightEvent : MonoBehaviour, IGameEvent
 {
     [SerializeField] private List<Light2D> lights = new List<Light2D>();
     [SerializeField] private bool turnOffPlayerLights = true;
+    [SerializeField] private string lightTag;
 
     public void Invoke()
     {
+        if (!string.IsNullOrEmpty(lightTag))
+        {
+            var foundLight = GameObject.FindGameObjectsWithTag(lightTag);
+            foreach(var light in foundLight)
+            {
+                lights.Add(light.GetComponent<Light2D>());
+            }
+        }
+
         if(turnOffPlayerLights)
         {
             var playerLights = GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<Light2D>();

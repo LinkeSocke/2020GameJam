@@ -9,4 +9,6 @@ public class Keycard : ScriptableObject
 {
     public EKeycardType keycardType = EKeycardType.BLUE;
     public Color keycardColor = Color.blue;
+    public Sprite doorSprite = null;
+    public Sprite keycardSprite = null;
 }
