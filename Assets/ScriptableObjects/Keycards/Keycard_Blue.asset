@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Keycard_Blue
   m_EditorClassIdentifier: 
   keycardType: 0
+  keycardColor: {r: 0, g: 0.7414398, b: 1, a: 1}

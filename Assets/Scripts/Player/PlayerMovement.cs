@@ -110,18 +110,18 @@ public class PlayerMovement : MonoBehaviour
 			// And then smoothing it out and applying it to the character
 			rgbd2D.velocity = Vector3.SmoothDamp(rgbd2D.velocity, targetVelocity, ref velocity, movementSmoothing);
 
-			// If the input is moving the player right and the player is facing left...
-			if (move > 0 && !facingRight)
-			{
-				// ... flip the player.
-				flip();
-			}
-			// Otherwise if the input is moving the player left and the player is facing right...
-			else if (move < 0 && facingRight)
-			{
-				// ... flip the player.
-				flip();
-			}
+			//// If the input is moving the player right and the player is facing left...
+			//if (move > 0 && !facingRight)
+			//{
+			//	// ... flip the player.
+			//	flip();
+			//}
+			//// Otherwise if the input is moving the player left and the player is facing right...
+			//else if (move < 0 && facingRight)
+			//{
+			//	// ... flip the player.
+			//	flip();
+			//}
 		}
 		// If the player should jump...
 		if (grounded && jump)
@@ -132,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
-	private void flip()
+	public void Flip()
 	{
 		// Switch the way the player is labelled as facing.
 		facingRight = !facingRight;
