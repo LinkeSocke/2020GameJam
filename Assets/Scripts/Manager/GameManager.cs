@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -16,6 +17,9 @@ public class GameManager : MonoBehaviour
     private GameObject player = null;
     private Transform spawnpoint = null;
     private string loadedScene;
+
+    private List<IBreakable> brokenObjects = new List<IBreakable>();
+    private int brokenObjectTotal = 0;
 
     private void Awake()
     {
@@ -45,6 +49,7 @@ public class GameManager : MonoBehaviour
     public void FinishLevel()
     {
         OnLevelFinished.Invoke();
+        Debug.Log($"{brokenObjects.Count} / {brokenObjectTotal}");
     }
 
     public void StartLevel()
@@ -56,6 +61,13 @@ public class GameManager : MonoBehaviour
         if (spawnpoint == null) return;
 
         player = Instantiate(playerPrefab, spawnpoint.position, Quaternion.identity) as GameObject;
+
+        brokenObjectTotal = GameObject.FindObjectsOfType<Breaking>().Length;
+    }
+
+    public void AddBrokenObject(IBreakable brokenObject)
+    {
+        brokenObjects.Add(brokenObject);
     }
 
     public void LoadLevel(string scene)
