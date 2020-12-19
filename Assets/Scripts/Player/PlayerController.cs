@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float movementSpeed = 40f;
 
     private float movementXAxis = 0f;
-    [SerializeField] private bool jump = false;
-    [SerializeField] private bool crouch = false;
+    private bool jump = false;
+    private bool crouch = false;
     [SerializeField] private float interactionDistance = 1.2f;
     [SerializeField] private LayerMask whatIsInteractable;
 
