@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: 2f3718053a994c04ab41d15d1c6ae244
+guid: 296b740c9d5edbe4a9afd2eaf52d1fcd
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7367732174824411636
+    second: Bookshelf_Whole_0
+  - first:
+      213: 6542829239211579925
+    second: Bookshelf_Whole_1
+  - first:
+      213: 4017459855365349327
+    second: Bookshelf_Whole_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +50,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,7 +96,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bookshelf_Whole_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 298
+        width: 271
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0eef577f9e80c990800000000000000
+      internalID: -7367732174824411636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf_Whole_1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 318
+        width: 353
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ade35178cccca50800000000000000
+      internalID: 6542829239211579925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf_Whole_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 21
+        width: 507
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf917af372e0c730800000000000000
+      internalID: 4017459855365349327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
