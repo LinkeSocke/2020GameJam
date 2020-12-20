@@ -38,7 +38,6 @@ public class GroundImpactDetection : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         isChecking = true;
-        Debug.Log("boop");
 
     }
 
