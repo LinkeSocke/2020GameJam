@@ -112,3 +112,4 @@ MonoBehaviour:
   woodCollection: {fileID: 11400000, guid: 694f21fc7a34e714d9c699bf341fa1e8, type: 2}
   krimskramsCollection: {fileID: 0}
   paperCollection: {fileID: 11400000, guid: 1ec07e0140f2d464ea34dbb6ff5d788e, type: 2}
+  metalCollection: {fileID: 11400000, guid: 172c59469ce5fd341a36aa054703bbd1, type: 2}

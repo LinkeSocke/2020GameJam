@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea91135efc062a4ea602728105b404a, type: 3}
   m_Name: PaperSounds
   m_EditorClassIdentifier: 
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 35f39a3b218bdbf418e11cb87478d727, type: 3}
+  - {fileID: 8300000, guid: 11774d06358a4e34a909b9fc9a53dd90, type: 3}
+  - {fileID: 8300000, guid: a79430ba8de6bdf4d85a348812ac4bb4, type: 3}
