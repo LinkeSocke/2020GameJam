@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour
     {
 
         var pos = context.action.ReadValue<Vector2>();
-        var flashlightPos = Camera.main.WorldToScreenPoint(flashlight.transform.position);
+        var flashlightPos = cam.WorldToScreenPoint(flashlight.transform.position);
         var dir = pos - new Vector2(flashlightPos.x, flashlightPos.y);
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + angleOffset;
 

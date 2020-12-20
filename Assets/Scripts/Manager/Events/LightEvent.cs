@@ -8,6 +8,7 @@ public class LightEvent : MonoBehaviour, IGameEvent
     [SerializeField] private List<Light2D> lights = new List<Light2D>();
     [SerializeField] private bool turnOffPlayerLights = true;
     [SerializeField] private string lightTag;
+    [SerializeField] private float globalLightIntensity = 0.8f;
 
     public void Invoke()
     {
@@ -25,7 +26,7 @@ public class LightEvent : MonoBehaviour, IGameEvent
             var playerLights = GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<Light2D>();
             foreach(var light in playerLights)
             {
-                light.enabled = !light.enabled;
+                light.gameObject.SetActive(false);
             }
         }
 
@@ -33,7 +34,14 @@ public class LightEvent : MonoBehaviour, IGameEvent
 
         foreach(var light in lights)
         {
-            light.enabled = !light.enabled;
+            if(light.lightType == Light2D.LightType.Global)
+            {
+                light.intensity = globalLightIntensity;
+            }
+            else
+            {
+                light.enabled = false;
+            }
         }
     }
 }

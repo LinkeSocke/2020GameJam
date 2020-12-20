@@ -49,6 +49,15 @@ public class GameManager : MonoBehaviour
     public void FinishLevel()
     {
         OnLevelFinished.Invoke();
+
+        var gameEvents = this.gameObject.GetComponents<IGameEvent>();
+        if (gameEvents == null) return;
+
+        foreach(var gameEvent in gameEvents)
+        {
+            gameEvent.Invoke();
+        }
+
         Debug.Log($"{brokenObjects.Count} / {brokenObjectTotal}");
     }
 
@@ -78,7 +87,6 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("OnSceneLoaded: " + scene.path);
         if(scene.path.Equals(loadedScene))
         {
             StartLevel();
