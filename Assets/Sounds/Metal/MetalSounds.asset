@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea91135efc062a4ea602728105b404a, type: 3}
   m_Name: MetalSounds
   m_EditorClassIdentifier: 
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 68a37c04535ba8e418fdf48661b7161d, type: 3}
+  - {fileID: 8300000, guid: 05fa27cfb38157744a26bbc279bfcf51, type: 3}
+  - {fileID: 8300000, guid: eb88d4c929979974690869c926bdcb73, type: 3}

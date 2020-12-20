@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea91135efc062a4ea602728105b404a, type: 3}
   m_Name: WoodCollection
   m_EditorClassIdentifier: 
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: cc9f489e0f3845d43aca16da719532b7, type: 3}
+  - {fileID: 8300000, guid: 36f95677351522b4ab696376465418bb, type: 3}
+  - {fileID: 8300000, guid: a35d8ddddfa724f46b157652c59648a3, type: 3}
+  - {fileID: 8300000, guid: 3de1bb38e16bffa4ca87ff9f977946f6, type: 3}
