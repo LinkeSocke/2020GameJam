@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     private List<IBreakable> brokenObjects = new List<IBreakable>();
     private int brokenObjectTotal = 0;
 
+    [Scene] public string endScene;
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -57,8 +59,6 @@ public class GameManager : MonoBehaviour
         {
             gameEvent.Invoke();
         }
-
-        Debug.Log($"{brokenObjects.Count} / {brokenObjectTotal}");
     }
 
     public void StartLevel()
@@ -87,11 +87,28 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
 
+    public void LoadEndScene()
+    {
+        loadedScene = endScene;
+        LoadLevel(endScene);
+    }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.path.Equals(endScene))
+        {
+            SetEndText();
+            return;
+        }
+
         if(scene.path.Equals(loadedScene))
         {
             StartLevel();
-        }
+        } 
+    }
+
+    private void SetEndText()
+    {
+        EndScreenManager.Instance.SetScore(brokenObjects.Count, brokenObjectTotal);
     }
 }
