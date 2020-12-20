@@ -867,7 +867,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wholeObject: {fileID: 978824676996667264}
   brokenObject: {fileID: 978824677126265315}
-  colliders: []
+  colliders:
+  - {fileID: 1426480247}
 --- !u!114 &1426480248
 MonoBehaviour:
   m_ObjectHideFlags: 0
