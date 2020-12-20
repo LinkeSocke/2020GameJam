@@ -8,11 +8,22 @@ public class GroundImpactDetection : MonoBehaviour
     [SerializeField]
     public UnityEvent onImpact;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.layer == 8 || collision.gameObject.GetComponent<IBreakable>() != null)
+    //    {
+    //        onImpact?.Invoke();
+    //    }
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+
+        Debug.Log($"Collision with {collision.gameObject.name} with tag {collision.gameObject.tag}");
+        if (collision.gameObject.layer == 8 || collision.gameObject.GetComponent<IBreakable>() != null)
         {
             onImpact?.Invoke();
         }
     }
+
 }
