@@ -39,6 +39,7 @@ public class Interactable : MonoBehaviour, IInteractable
         interactSpriteObj.SetActive(false);
     }
 
+
     public void Interact()
     {
         OnInteract.Invoke();
@@ -47,6 +48,11 @@ public class Interactable : MonoBehaviour, IInteractable
     private void Update()
     {
         if (!displayTooltip) return;
+        if (!player)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
+
 
         if (Vector3.Distance(this.transform.position, player.transform.position) > playerDetectionRange)
         {
