@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3849541305199485116}
   - component: {fileID: 3849541305199485114}
   - component: {fileID: 426437977}
+  - component: {fileID: 5732124172943916783}
+  - component: {fileID: 6172283070986934720}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -49,19 +51,7 @@ MonoBehaviour:
       m_Calls: []
   OnLevelFinished:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 426437977}
-        m_TargetAssemblyTypeName: LightEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   playerPrefab: {fileID: 625436497006709944, guid: 7514db058e6f3934dbaa032fedd3add1, type: 3}
 --- !u!114 &426437977
 MonoBehaviour:
@@ -78,3 +68,29 @@ MonoBehaviour:
   lights: []
   turnOffPlayerLights: 1
   lightTag: Light
+  globalLightIntensity: 0.8
+--- !u!114 &5732124172943916783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849541305199485115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af15f31340ed29b4da606eeebe6ffb7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6172283070986934720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849541305199485115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fd226773be3f340bd9d4c6c025f796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraRouteController: {fileID: 0}

@@ -34,5 +34,6 @@ public class UIManager : MonoBehaviour
         // TESTING
         newItem.GetComponent<Image>().color = keycards.keycardColor;
     }
+
 }
  
