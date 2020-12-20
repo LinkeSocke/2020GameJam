@@ -45,7 +45,12 @@ public class Breaking : MonoBehaviour, IBreakable
 
             //Destroy(this.gameObject, 15);
 
-            GameManager.Instance.AddBrokenObject(this);
+            AddToBrokenList();
         }
+    }
+
+    public void AddToBrokenList()
+    {
+        GameManager.Instance.AddBrokenObject(this);
     }
 }
