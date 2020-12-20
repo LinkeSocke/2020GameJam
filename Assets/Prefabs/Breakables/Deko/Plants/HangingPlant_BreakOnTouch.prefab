@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 978824676996667260}
   - component: {fileID: 978824676996667261}
-  - component: {fileID: 978824676996667266}
-  - component: {fileID: 978824676996667267}
   m_Layer: 12
   m_Name: Plant02_Whole
   m_TagString: Untagged
@@ -84,49 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
---- !u!114 &978824676996667266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978824676996667264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8300b31b44730c49858f5534f0ea31b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onTouch:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 978824678678593927}
-        m_TargetAssemblyTypeName: Breaking, Assembly-CSharp
-        m_MethodName: Break
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!70 &978824676996667267
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978824676996667264}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.04729414, y: -0.69562984}
-  m_Size: {x: 1.0283175, y: 1.0283175}
-  m_Direction: 0
 --- !u!1 &978824677126265315
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +828,8 @@ GameObject:
   m_Component:
   - component: {fileID: 978824678678593926}
   - component: {fileID: 978824678678593927}
+  - component: {fileID: 1426480248}
+  - component: {fileID: 1426480247}
   m_Layer: 12
   m_Name: HangingPlant_BreakOnTouch
   m_TagString: Untagged
@@ -911,3 +868,46 @@ MonoBehaviour:
   wholeObject: {fileID: 978824676996667264}
   brokenObject: {fileID: 978824677126265315}
   colliders: []
+--- !u!114 &1426480248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978824678678593924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8300b31b44730c49858f5534f0ea31b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTouch:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 978824678678593927}
+        m_TargetAssemblyTypeName: Breaking, Assembly-CSharp
+        m_MethodName: Break
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!70 &1426480247
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978824678678593924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.61, y: -0.687917}
+  m_Size: {x: 1.0283175, y: 1.2286134}
+  m_Direction: 0
