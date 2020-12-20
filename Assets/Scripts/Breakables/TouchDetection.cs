@@ -21,7 +21,7 @@ public class TouchDetection : MonoBehaviour
         if (isChecking)
         {
 
-            if((collision.gameObject.tag == "Player" || collision.gameObject.tag == "Falling" ))
+            if((collision.gameObject.tag == "Player" || collision.gameObject.layer == 8 ))
             {
                 onTouch?.Invoke();
             }
