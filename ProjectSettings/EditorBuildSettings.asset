@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Houses/HouseVariant1.unity
     guid: 76aae246bfd8d534d84d428f08bae215
   - enabled: 1
+    path: Assets/Scenes/Houses/HouseVariant2.unity
+    guid: dc4f437d792a5ec45b05352c18d5e8be
+  - enabled: 1
     path: Assets/Scenes/UIScenes/EndScene.unity
     guid: f9fc12c5b7a3de346a6b85ff26a533d1
   m_configObjects:

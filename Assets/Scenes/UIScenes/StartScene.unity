@@ -794,7 +794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScene1: Assets/Scenes/Houses/HouseVariant1.unity
-  playerScene2: Assets/Scenes/Houses/HouseVariant1.unity
+  playerScene2: Assets/Scenes/Houses/HouseVariant2.unity
   startMenu: {fileID: 1834758248}
   slideShowContainer: {fileID: 2133472838}
   slideShow: {fileID: 1727626802}

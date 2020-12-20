@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform crouchedLightPosition = null;
     [SerializeField] private Transform standingLightPosition = null;
 
+    private bool isGrounded = false;
+
     private void Awake()
     {
         moveController = GetComponent<PlayerMovement>();
@@ -36,30 +38,36 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (movementXAxis != 0)
+        if (!isGrounded)
         {
-            if (crouch)
-            {
-                anim.SetInteger(MOVEMENT_STATE, 3);
-            }
-            else
-            {
-                anim.SetInteger(MOVEMENT_STATE, 1);
-            }
+            anim.SetInteger(MOVEMENT_STATE, 4);
         }
         else
         {
-            if (crouch)
+            if (movementXAxis != 0)
             {
-                anim.SetInteger(MOVEMENT_STATE, 2);
+                if (crouch)
+                {
+                    anim.SetInteger(MOVEMENT_STATE, 3);
+                }
+                else
+                {
+                    anim.SetInteger(MOVEMENT_STATE, 1);
+                }
             }
             else
             {
-                anim.SetInteger(MOVEMENT_STATE, 0);
+                if (crouch)
+                {
+                    anim.SetInteger(MOVEMENT_STATE, 2);
+                }
+                else
+                {
+                    anim.SetInteger(MOVEMENT_STATE, 0);
+                }
             }
         }
-
-        moveController.Move(movementXAxis, crouch, jump);
+        moveController.Move(movementXAxis, crouch, jump, ref isGrounded);
         jump = false;
     }
 

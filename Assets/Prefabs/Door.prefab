@@ -131,6 +131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23511d8a8ae10344897765cd0423401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayTooltip: 1
+  interactButtonSprite: {fileID: 21300000, guid: 05f553ff90123ee499512676c04ac2ed, type: 3}
+  interactButtonMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  interactSpriteOffset: 0.25
+  interactButtonLayer: 10
+  playerDetectionRange: 3
   OnInteract:
     m_PersistentCalls:
       m_Calls:
@@ -159,8 +165,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exitDoor: {fileID: 0}
-  checkForObject: 1
-  checkType: 1
+  randomizeDoor: 0
+  checkForKeycard: 0
+  keycard: {fileID: 0}
+  keycardCollection: {fileID: 0}
 --- !u!61 &869542451991523736
 BoxCollider2D:
   m_ObjectHideFlags: 0
