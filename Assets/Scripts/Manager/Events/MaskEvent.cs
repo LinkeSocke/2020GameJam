@@ -6,6 +6,10 @@ public class MaskEvent : MonoBehaviour, IGameEvent
 {
     public void Invoke()
     {
-        var maskList = GameObject.FindObjectsOfType<SpriteMask>();
+        var spriteRenderers = GameObject.FindObjectsOfType<SpriteRenderer>();
+        foreach(var spriteRenderer in spriteRenderers)
+        {
+            spriteRenderer.maskInteraction = SpriteMaskInteraction.None;
+        }
     }
 }

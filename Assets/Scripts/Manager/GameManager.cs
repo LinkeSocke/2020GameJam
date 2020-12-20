@@ -49,6 +49,15 @@ public class GameManager : MonoBehaviour
     public void FinishLevel()
     {
         OnLevelFinished.Invoke();
+
+        var gameEvents = this.gameObject.GetComponents<IGameEvent>();
+        if (gameEvents == null) return;
+
+        foreach(var gameEvent in gameEvents)
+        {
+            gameEvent.Invoke();
+        }
+
         Debug.Log($"{brokenObjects.Count} / {brokenObjectTotal}");
     }
 
