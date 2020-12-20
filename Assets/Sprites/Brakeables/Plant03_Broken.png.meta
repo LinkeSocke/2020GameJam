@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: fd7f2765bdb90b54da93f94c44427122
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3851988302147247390
+    second: Plant03_Broken_0
+  - first:
+      213: -2398049684478417934
+    second: Plant03_Broken_1
+  - first:
+      213: 3009965530991692417
+    second: Plant03_Broken_2
+  - first:
+      213: -7886942900276735879
+    second: Plant03_Broken_3
+  - first:
+      213: 7890915795597337751
+    second: Plant03_Broken_4
+  - first:
+      213: 5846068154310056885
+    second: Plant03_Broken_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,7 +105,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Plant03_Broken_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 197
+        width: 175
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2ad834c0dfa8ac0800000000000000
+      internalID: -3851988302147247390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant03_Broken_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 111
+        width: 174
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f32de2748a68bed0800000000000000
+      internalID: -2398049684478417934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant03_Broken_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 120
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a0ee4f3bb85c920800000000000000
+      internalID: 3009965530991692417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant03_Broken_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 166
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97057311833fb8290800000000000000
+      internalID: -7886942900276735879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant03_Broken_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 8
+        width: 101
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7942915bb1a228d60800000000000000
+      internalID: 7890915795597337751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant03_Broken_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 12
+        width: 21
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbdf563308612150800000000000000
+      internalID: 5846068154310056885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
