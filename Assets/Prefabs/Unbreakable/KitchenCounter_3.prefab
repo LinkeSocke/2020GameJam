@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5980176610661405123}
   - component: {fileID: 5980176610661405124}
   - component: {fileID: 5980176610661405125}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: KitchenCounter_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
