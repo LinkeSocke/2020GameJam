@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea91135efc062a4ea602728105b404a, type: 3}
+  m_Name: WoodCollection
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: cc9f489e0f3845d43aca16da719532b7, type: 3}
+  - {fileID: 8300000, guid: 36f95677351522b4ab696376465418bb, type: 3}
+  - {fileID: 8300000, guid: a35d8ddddfa724f46b157652c59648a3, type: 3}
+  - {fileID: 8300000, guid: 3de1bb38e16bffa4ca87ff9f977946f6, type: 3}

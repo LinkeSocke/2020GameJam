@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98d099fa866e4074e991627c732872a6, type: 3}
+  m_Name: Keycard_Green
+  m_EditorClassIdentifier: 
+  keycardType: 2
+  keycardColor: {r: 0.45817018, g: 0.8301887, b: 0.48660022, a: 1}
+  doorSprite: {fileID: 21300000, guid: 41a5320cc7ce2ed49a75694029d2c371, type: 3}
+  keycardSprite: {fileID: 21300000, guid: 2f3718053a994c04ab41d15d1c6ae244, type: 3}

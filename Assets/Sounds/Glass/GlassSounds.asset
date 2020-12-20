@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea91135efc062a4ea602728105b404a, type: 3}
+  m_Name: GlassSounds
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 873e67b76b3151c4db9049a783d73ca8, type: 3}
+  - {fileID: 8300000, guid: 0084213a698829b4db14de7db6b10e4e, type: 3}
+  - {fileID: 8300000, guid: 1ddc0aa86210ad64a88ff3b33cf6119e, type: 3}
+  - {fileID: 8300000, guid: 2740682b6295de943896da8a06b0753a, type: 3}

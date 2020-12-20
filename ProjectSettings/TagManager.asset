@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interactable
+  - Ground
+  - Spawnpoint
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -13,11 +17,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Interactable
+  - Pieces
+  - Obstacles
   - 
   - 
   - 
@@ -38,6 +42,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: House
+    uniqueID: 2576546527
+    locked: 0
+  - name: Background
+    uniqueID: 2207990583
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Obstacles in Front
+    uniqueID: 61282343
+    locked: 0
+  - name: Player
+    uniqueID: 3701752777
+    locked: 0
+  - name: Obstacles Behind
+    uniqueID: 3997535047
+    locked: 0
+  - name: Background
+    uniqueID: 3863601915
     locked: 0
