@@ -578,6 +578,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6172283070986934720, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
 --- !u!1 &577460565
@@ -765,8 +769,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f04b7bb42bcb2340851c616d09240b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScene1: Assets/Scenes/TestScene.unity
-  playerScene2: 
+  playerScene1: Assets/Scenes/Houses/HouseVariant1.unity
+  playerScene2: Assets/Scenes/Houses/HouseVariant1.unity
   startMenu: {fileID: 1834758248}
   slideShowContainer: {fileID: 2133472838}
   slideShow: {fileID: 1727626802}
