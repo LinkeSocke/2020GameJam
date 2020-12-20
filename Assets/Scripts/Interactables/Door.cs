@@ -36,7 +36,7 @@ public class Door : MonoBehaviour
         this.keycard = keycard;
         var spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = keycard.doorSprite;
-        spriteRenderer.color = keycard.keycardColor;
+        //spriteRenderer.color = keycard.keycardColor;
     }
 
     public void ActivateDoor()

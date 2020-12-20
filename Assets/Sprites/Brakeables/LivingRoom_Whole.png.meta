@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: fd7f2765bdb90b54da93f94c44427122
+guid: d11afc93fa62e0446aa73622a5cf9daf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3851988302147247390
-    second: Plant03_Broken_0
+      213: -6130230505132764040
+    second: LivingRoom_Whole_0
   - first:
-      213: -2398049684478417934
-    second: Plant03_Broken_1
+      213: -7999244250077741101
+    second: LivingRoom_Whole_1
   - first:
-      213: 3009965530991692417
-    second: Plant03_Broken_2
+      213: 6469168081136286090
+    second: LivingRoom_Whole_2
   - first:
-      213: -7886942900276735879
-    second: Plant03_Broken_3
+      213: -4796579894939993354
+    second: LivingRoom_Whole_3
   - first:
-      213: 7890915795597337751
-    second: Plant03_Broken_4
+      213: 1051553803108893792
+    second: LivingRoom_Whole_4
   - first:
-      213: 5846068154310056885
-    second: Plant03_Broken_5
+      213: 2062562497316082745
+    second: LivingRoom_Whole_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -59,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -107,13 +107,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant03_Broken_0
+      name: LivingRoom_Whole_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 410
+        width: 302
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8745c4eb5db0deaa0800000000000000
+      internalID: -6130230505132764040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingRoom_Whole_1
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 395
+        width: 184
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfb7828cb9fcf090800000000000000
+      internalID: -7999244250077741101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingRoom_Whole_2
       rect:
         serializedVersion: 2
         x: 11
-        y: 197
-        width: 175
-        height: 95
+        y: 38
+        width: 347
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e2ad834c0dfa8ac0800000000000000
-      internalID: -3851988302147247390
+      spriteID: a897c6c381a17c950800000000000000
+      internalID: 6469168081136286090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_1
+      name: LivingRoom_Whole_3
       rect:
         serializedVersion: 2
-        x: 210
-        y: 111
-        width: 174
-        height: 199
+        x: 439
+        y: 29
+        width: 568
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f32de2748a68bed0800000000000000
-      internalID: -2398049684478417934
+      spriteID: 6fa3259bfff1f6db0800000000000000
+      internalID: -4796579894939993354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_2
+      name: LivingRoom_Whole_4
       rect:
         serializedVersion: 2
-        x: 114
-        y: 120
-        width: 73
-        height: 70
+        x: 152
+        y: 26
+        width: 14
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a0ee4f3bb85c920800000000000000
-      internalID: 3009965530991692417
+      spriteID: 0644480dc9ed79e00800000000000000
+      internalID: 1051553803108893792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_3
+      name: LivingRoom_Whole_5
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
-        width: 166
-        height: 101
+        x: 580
+        y: 17
+        width: 14
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,50 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97057311833fb8290800000000000000
-      internalID: -7886942900276735879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plant03_Broken_4
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 8
-        width: 101
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7942915bb1a228d60800000000000000
-      internalID: 7890915795597337751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plant03_Broken_5
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 12
-        width: 21
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bbdf563308612150800000000000000
-      internalID: 5846068154310056885
+      spriteID: 9345193d9a1bf9c10800000000000000
+      internalID: 2062562497316082745
       vertices: []
       indices: 
       edges: []

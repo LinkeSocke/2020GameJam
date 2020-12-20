@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Keycard_Green
   m_EditorClassIdentifier: 
   keycardType: 2
-  keycardColor: {r: 1, g: 1, b: 1, a: 1}
+  keycardColor: {r: 0.45817018, g: 0.8301887, b: 0.48660022, a: 1}
   doorSprite: {fileID: 21300000, guid: 41a5320cc7ce2ed49a75694029d2c371, type: 3}
-  keycardSprite: {fileID: 21300000, guid: 03b6bb862885dd8478eba6fe2794b43b, type: 3}
+  keycardSprite: {fileID: 21300000, guid: 2f3718053a994c04ab41d15d1c6ae244, type: 3}

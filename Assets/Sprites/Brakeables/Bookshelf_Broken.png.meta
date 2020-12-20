@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: fd7f2765bdb90b54da93f94c44427122
+guid: 5102e77fb462cac42b2bdc3684fb160f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3851988302147247390
-    second: Plant03_Broken_0
+      213: 8612146622327811685
+    second: Bookshelf_Broken_0
   - first:
-      213: -2398049684478417934
-    second: Plant03_Broken_1
+      213: 8344807622983042939
+    second: Bookshelf_Broken_1
   - first:
-      213: 3009965530991692417
-    second: Plant03_Broken_2
+      213: -4287136609837947032
+    second: Bookshelf_Broken_2
   - first:
-      213: -7886942900276735879
-    second: Plant03_Broken_3
+      213: -1292254945743587125
+    second: Bookshelf_Broken_3
   - first:
-      213: 7890915795597337751
-    second: Plant03_Broken_4
+      213: 5125546709758023859
+    second: Bookshelf_Broken_4
   - first:
-      213: 5846068154310056885
-    second: Plant03_Broken_5
+      213: 6177332557279357192
+    second: Bookshelf_Broken_5
+  - first:
+      213: 4095162191933701754
+    second: Bookshelf_Broken_6
+  - first:
+      213: -6304514137468551400
+    second: Bookshelf_Broken_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -59,7 +65,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -107,13 +113,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant03_Broken_0
+      name: Bookshelf_Broken_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 197
+        x: 17
+        y: 158
+        width: 121
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eed6159bd748770800000000000000
+      internalID: 8612146622327811685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf_Broken_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 186
+        width: 164
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7740e60256bec370800000000000000
+      internalID: 8344807622983042939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf_Broken_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 186
         width: 175
-        height: 95
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e2ad834c0dfa8ac0800000000000000
-      internalID: -3851988302147247390
+      spriteID: 8676903b7f70184c0800000000000000
+      internalID: -4287136609837947032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_1
+      name: Bookshelf_Broken_3
       rect:
         serializedVersion: 2
-        x: 210
-        y: 111
-        width: 174
-        height: 199
+        x: 17
+        y: 20
+        width: 121
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f32de2748a68bed0800000000000000
-      internalID: -2398049684478417934
+      spriteID: bc836b739fcf01ee0800000000000000
+      internalID: -1292254945743587125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_2
+      name: Bookshelf_Broken_4
       rect:
         serializedVersion: 2
-        x: 114
-        y: 120
-        width: 73
-        height: 70
+        x: 145
+        y: 20
+        width: 121
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a0ee4f3bb85c920800000000000000
-      internalID: 3009965530991692417
+      spriteID: 3b89cc28399912740800000000000000
+      internalID: 5125546709758023859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_3
+      name: Bookshelf_Broken_5
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
-        width: 166
-        height: 101
+        x: 290
+        y: 24
+        width: 91
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97057311833fb8290800000000000000
-      internalID: -7886942900276735879
+      spriteID: 80967106b3b4ab550800000000000000
+      internalID: 6177332557279357192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_4
+      name: Bookshelf_Broken_6
       rect:
         serializedVersion: 2
-        x: 189
-        y: 8
-        width: 101
-        height: 88
+        x: 389
+        y: 24
+        width: 91
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7942915bb1a228d60800000000000000
-      internalID: 7890915795597337751
+      spriteID: a7e71d30150f4d830800000000000000
+      internalID: 4095162191933701754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant03_Broken_5
+      name: Bookshelf_Broken_7
       rect:
         serializedVersion: 2
-        x: 331
-        y: 12
-        width: 21
-        height: 88
+        x: 505
+        y: 72
+        width: 156
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +274,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bbdf563308612150800000000000000
-      internalID: 5846068154310056885
+      spriteID: 81f32c27bcdd188a0800000000000000
+      internalID: -6304514137468551400
       vertices: []
       indices: 
       edges: []
