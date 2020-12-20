@@ -300,7 +300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fa58aa51c9c40f448b7154e1b910da17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 977d87f557d901c489c94538f4a4df93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuzeActionOptions: {fileID: 11400000, guid: b28f9ab309269b048893707da78474da, type: 2}
-  currentFuzeAction: {fileID: 11400000, guid: 0f374910714b49c499c385976690cf3e, type: 2}
+  currentFuzeAction: {fileID: 11400000, guid: b674ee1bc7985504cb3acde1b6dc1312, type: 2}
 --- !u!1 &6381002260130602932
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 2.5
+          m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -978,7 +978,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 977d87f557d901c489c94538f4a4df93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0226eb48e4ca1304daf1726d19e2506e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuzeActionOptions: {fileID: 11400000, guid: b28f9ab309269b048893707da78474da, type: 2}
-  currentFuzeAction: {fileID: 11400000, guid: b674ee1bc7985504cb3acde1b6dc1312, type: 2}
+  currentFuzeAction: {fileID: 11400000, guid: f5825bee4f8a95245a7b4e403421dd41, type: 2}
 --- !u!1 &6381002260607806921
 GameObject:
   m_ObjectHideFlags: 0
