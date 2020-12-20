@@ -95,7 +95,7 @@ MonoBehaviour:
   airControl: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4352
   groundCheck: {fileID: 625436496340505895}
   ceilingCheck: {fileID: 625436497860139795}
   crouchDisableCollider: {fileID: 625436497006709893}
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.035472095, y: 2.096702}
+  m_Offset: {x: 0.035472095, y: 2.1177351}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -175,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.355851, y: 4.205764}
+  m_Size: {x: 1.355851, y: 4.1636977}
   m_EdgeRadius: 0
 --- !u!61 &625436497006709892
 BoxCollider2D:
@@ -190,7 +190,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10882032, y: 0.5061233}
+  m_Offset: {x: 0.10882032, y: 0.5254209}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -201,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 1
   serializedVersion: 2
-  m_Size: {x: 3.0673053, y: 1.0122466}
+  m_Size: {x: 3.0673053, y: 0.9736514}
   m_EdgeRadius: 0
 --- !u!114 &625436497006709946
 MonoBehaviour:
@@ -973,11 +973,11 @@ SpriteMask:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ed89531445235b44888e6909d88c0d93, type: 3}
-  m_MaskAlphaCutoff: 0.093
-  m_FrontSortingLayerID: 0
-  m_BackSortingLayerID: 0
-  m_FrontSortingLayer: 0
-  m_BackSortingLayer: 0
+  m_MaskAlphaCutoff: 0
+  m_FrontSortingLayerID: -297432249
+  m_BackSortingLayerID: 61282343
+  m_FrontSortingLayer: 3
+  m_BackSortingLayer: 1
   m_FrontSortingOrder: 0
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0

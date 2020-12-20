@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 208533639093425217}
   - component: {fileID: 208533639093425228}
   - component: {fileID: 3695886389958985443}
+  - component: {fileID: 5470155653468033799}
   m_Layer: 12
   m_Name: Breadknife_FallOnTouch
   m_TagString: Untagged
@@ -205,6 +206,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5470155653468033799}
+        m_TargetAssemblyTypeName: Breaking, Assembly-CSharp
+        m_MethodName: AddToBrokenList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3695886389958985443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +231,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 208533637565554427}
+--- !u!114 &5470155653468033799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208533639093425216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d906b14ab8e89c439775fc5cda482dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wholeObject: {fileID: 0}
+  brokenObject: {fileID: 0}
+  colliders: []
