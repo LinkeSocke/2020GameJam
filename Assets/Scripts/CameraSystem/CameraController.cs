@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CameraController : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class CameraController : MonoBehaviour
         if (index < cameraRoutes.Count)
         {
             StartCoroutine(LerpPos(cameraRoutes[index], index));
+        }
+        else
+        {
+            GameManager.Instance.LoadEndScene();
         }
     }
 
