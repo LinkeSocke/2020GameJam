@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 426437977}
   - component: {fileID: 5732124172943916783}
   - component: {fileID: 6172283070986934720}
+  - component: {fileID: 6395021782960218731}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -53,6 +54,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerPrefab: {fileID: 625436497006709944, guid: 7514db058e6f3934dbaa032fedd3add1, type: 3}
+  endScene: 
 --- !u!114 &426437977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,4 +95,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fd226773be3f340bd9d4c6c025f796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraRouteController: {fileID: 0}
+--- !u!114 &6395021782960218731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849541305199485115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80b1cf276bbd6944961f90e33f2f87d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collection: {fileID: 0}
+  glassCollection: {fileID: 0}
+  woodCollection: {fileID: 0}
+  krimskramsCollection: {fileID: 0}
+  paperCollection: {fileID: 0}
