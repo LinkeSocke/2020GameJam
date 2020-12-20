@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Breaking : MonoBehaviour, IBreakable
 {
     [SerializeField]
@@ -14,6 +15,14 @@ public class Breaking : MonoBehaviour, IBreakable
     protected Collider2D[] colliders;
 
     protected bool broken = false;
+
+    public AUDIO_SOURCE_TYPE audioType = AUDIO_SOURCE_TYPE.NONE;
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public virtual void Break()
     {
@@ -46,6 +55,9 @@ public class Breaking : MonoBehaviour, IBreakable
             //Destroy(this.gameObject, 15);
 
             AddToBrokenList();
+
+            var audioClip = AudioManager.Instance.GetRandomClip(audioType);
+            audioSource.PlayOneShot(audioClip);
         }
     }
 
