@@ -9,11 +9,29 @@ public class TouchDetection : MonoBehaviour
     [SerializeField]
     public UnityEvent onTouch;
 
+    private bool isChecking = false;
+
+    private void Awake()
+    {
+        StartCoroutine(DoWaitForDetection(2.0f));
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if((collision.gameObject.tag == "Player" || collision.gameObject.GetComponent<IBreakable>() != null))
+        if (isChecking)
         {
-            onTouch?.Invoke();
+
+            if((collision.gameObject.tag == "Player" || collision.gameObject.tag == "Falling" ))
+            {
+                onTouch?.Invoke();
+            }
         }
+    }
+
+    public IEnumerator DoWaitForDetection(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        isChecking = true;
+
     }
 }
