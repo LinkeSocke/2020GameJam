@@ -15,6 +15,7 @@ MonoBehaviour:
   description: Sequence for Box A (example).
   fuzeboxActionSequence:
     array:
-    - {fileID: 11400000, guid: f5825bee4f8a95245a7b4e403421dd41, type: 2}
+    - {fileID: 11400000, guid: b674ee1bc7985504cb3acde1b6dc1312, type: 2}
     - {fileID: 11400000, guid: ed8793a54abaff643a53c695d3a748ba, type: 2}
     - {fileID: 11400000, guid: 0f374910714b49c499c385976690cf3e, type: 2}
+    - {fileID: 11400000, guid: f5825bee4f8a95245a7b4e403421dd41, type: 2}
