@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 177390406746119872}
   - component: {fileID: 177390406746119873}
   - component: {fileID: 177390406746119874}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bookshelf_Broken_7 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 177390407373577968}
   - component: {fileID: 177390407373577969}
   - component: {fileID: 177390407373577970}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bookshelf_Broken_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 177390407850913310}
   - component: {fileID: 177390407850913311}
   - component: {fileID: 177390407850913296}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bookshelf_Broken_7 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 177390407970832313}
   - component: {fileID: 177390407970832314}
   - component: {fileID: 177390407970832315}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bookshelf_Broken_7 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 177390408085835182}
   - component: {fileID: 177390408085835183}
   - component: {fileID: 177390408085835168}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bookshelf_Broken_7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 177390408499167200}
   - component: {fileID: 177390408499167201}
   - component: {fileID: 177390408499167202}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bookshelf_Broken_7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
