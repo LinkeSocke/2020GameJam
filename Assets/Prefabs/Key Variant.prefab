@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!70 &864687314
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614110200062633456}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.006052017}
+  m_Size: {x: 0.5, y: 0.5}
+  m_Direction: 0
 --- !u!1001 &7918834627777880271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4451575932045408973, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_InstanceId
-      value: -494028
+      value: -835396
       objectReference: {fileID: 0}
     - target: {fileID: 6542028927575796531, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_Size.x
@@ -39,6 +55,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 6900284524603245883, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6900284524603245886, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,11 +73,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6900284524603245886, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.35
+      value: 13.1
       objectReference: {fileID: 0}
     - target: {fileID: 6900284524603245886, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.06
+      value: 17.12
       objectReference: {fileID: 0}
     - target: {fileID: 6900284524603245886, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_LocalPosition.z
@@ -93,7 +113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6900284524603245887, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_Name
-      value: Key
+      value: Key Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900284524603245887, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6900284524603245887, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
       propertyPath: m_TagString
@@ -101,3 +125,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
+--- !u!1 &3614110200062633456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6900284524603245887, guid: 95008fa612640864da2bca2a9b8ad684, type: 3}
+  m_PrefabInstance: {fileID: 7918834627777880271}
+  m_PrefabAsset: {fileID: 0}

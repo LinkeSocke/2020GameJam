@@ -530,6 +530,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3849541305199485114, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: OnLevelFinished.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849541305199485114, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: OnLevelFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849541305199485114, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: OnLevelFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849541305199485114, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: OnLevelFinished.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3849541305199485114, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: OnLevelFinished.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3849541305199485115, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
       propertyPath: m_Name
       value: Manager
@@ -576,6 +596,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3849541305199485116, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172283070986934720, guid: 31b171a36dd90b44fa2adbab266bcb14, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -765,8 +789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f04b7bb42bcb2340851c616d09240b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScene1: Assets/Scenes/TestScene.unity
-  playerScene2: 
+  playerScene1: Assets/Scenes/Houses/HouseVariant1.unity
+  playerScene2: Assets/Scenes/Houses/HouseVariant1.unity
   startMenu: {fileID: 1834758248}
   slideShowContainer: {fileID: 2133472838}
   slideShow: {fileID: 1727626802}

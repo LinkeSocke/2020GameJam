@@ -99,7 +99,7 @@ MonoBehaviour:
   groundCheck: {fileID: 625436496340505895}
   ceilingCheck: {fileID: 625436497860139795}
   crouchDisableCollider: {fileID: 625436497006709893}
-  crouchDisableLight: {fileID: 6963354189311924575}
+  crouchDisableLight: {fileID: 3314207373724269413}
   crouchEnableCollider: {fileID: 625436497006709892}
   OnLandEvent:
     m_PersistentCalls:

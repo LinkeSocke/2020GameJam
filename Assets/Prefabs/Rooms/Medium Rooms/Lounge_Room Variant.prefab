@@ -1,26 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!50 &1505997149
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719676587246628923}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.5
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &3038292019501368706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -358,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3783425307331446761, guid: c5863dba484d7ba4e8326cfdc69cc9fd, type: 3}
       propertyPath: m_Name
-      value: Lounge_Room
+      value: Lounge_Room Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5863dba484d7ba4e8326cfdc69cc9fd, type: 3}
@@ -1303,11 +1282,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f1c23b31bc28e344af7ee64543b7a22, type: 3}
---- !u!1 &719676587246628923 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2582498233562609272, guid: 5f1c23b31bc28e344af7ee64543b7a22, type: 3}
-  m_PrefabInstance: {fileID: 3038292021553038915}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3038292021573278734
 PrefabInstance:
   m_ObjectHideFlags: 0

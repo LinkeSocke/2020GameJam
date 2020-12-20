@@ -67,6 +67,8 @@ public class GameManager : MonoBehaviour
 
         spawnpoint = GameObject.FindGameObjectWithTag("Spawnpoint").transform;
 
+        GetComponent<CameraEvent>().Initialize(GameObject.FindObjectOfType<CameraController>().gameObject);
+
         if (spawnpoint == null) return;
 
         player = Instantiate(playerPrefab, spawnpoint.position, Quaternion.identity) as GameObject;
