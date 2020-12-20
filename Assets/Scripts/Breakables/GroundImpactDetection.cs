@@ -12,7 +12,7 @@ public class GroundImpactDetection : MonoBehaviour
 
     private void Awake()
     {
-        StartCoroutine(DoWaitForDetection(2.0f));
+        StartCoroutine(DoWaitForDetection(.5f));
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)
@@ -27,8 +27,7 @@ public class GroundImpactDetection : MonoBehaviour
     {
         if (isChecking)
         {
-            Debug.Log($"Collision with {collision.gameObject.name} with tag {collision.gameObject.tag}");
-            if (collision.gameObject.layer == 8 || collision.gameObject.GetComponent<IBreakable>() != null)
+            if (collision.gameObject.layer == 8 || collision.gameObject.layer == 12 || collision.gameObject.GetComponent<IBreakable>() != null)
             {
                 onImpact?.Invoke();
             }

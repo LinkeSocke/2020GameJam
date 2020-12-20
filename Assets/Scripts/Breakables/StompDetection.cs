@@ -15,7 +15,7 @@ public class StompDetection : MonoBehaviour
 
     private void Awake()
     {
-        StartCoroutine(DoWaitForDetection(2.0f));
+        StartCoroutine(DoWaitForDetection(.5f));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

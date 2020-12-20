@@ -13,7 +13,7 @@ public class TouchDetection : MonoBehaviour
 
     private void Awake()
     {
-        StartCoroutine(DoWaitForDetection(2.0f));
+        StartCoroutine(DoWaitForDetection(.5f));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
