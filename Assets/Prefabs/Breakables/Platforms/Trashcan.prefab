@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 177390408009431102}
   - component: {fileID: 177390408009431092}
   - component: {fileID: 177390408009431091}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Trashcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,8 +763,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6898904528117749840, guid: 8168957a8adca8a41bd76ef06b0b8ade, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -775,7 +775,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!50 &177390408009431102
 Rigidbody2D:

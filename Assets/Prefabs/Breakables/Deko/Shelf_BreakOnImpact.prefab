@@ -81,7 +81,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!61 &1180264978199696297
 BoxCollider2D:
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 1180264979692803125}
   - component: {fileID: 1180264979692803126}
   m_Layer: 8
-  m_Name: Shelf_BreakOnStomp
+  m_Name: Shelf_BreakOnImpact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
