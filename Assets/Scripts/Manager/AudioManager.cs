@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AUDIO_SOURCE_TYPE { GLASS, WOOD, KRIMSKRAMS, PAPER, NONE}
+public enum AUDIO_SOURCE_TYPE { GLASS, WOOD, KRIMSKRAMS, PAPER, NONE, METAL}
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioCollection woodCollection;
     public AudioCollection krimskramsCollection;
     public AudioCollection paperCollection;
+    public AudioCollection metalCollection;
 
     private void Awake()
     {
@@ -49,6 +50,9 @@ public class AudioManager : MonoBehaviour
             case AUDIO_SOURCE_TYPE.PAPER:
                 if (paperCollection == null) goto default;
                 return GetRandomClip(paperCollection);
+            case AUDIO_SOURCE_TYPE.METAL:
+                if (metalCollection == null) goto default;
+                return GetRandomClip(metalCollection);
             default:
                 return GetRandomClip();
 
