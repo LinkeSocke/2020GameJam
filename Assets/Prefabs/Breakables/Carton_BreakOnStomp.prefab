@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayAmount: 1.5
+  delayAmount: 0.1
   targetLayer: 11
   startOnEnable: 1
 --- !u!1 &7303318690552709473
@@ -159,7 +159,8 @@ GameObject:
   - component: {fileID: 7303318690552709485}
   - component: {fileID: 7303318690552709474}
   - component: {fileID: 7303318690552709475}
-  m_Layer: 11
+  - component: {fileID: 4750657138019350090}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,8 +218,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6304514137468551400, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -268,6 +269,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4750657138019350090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318690552709473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318690823352155
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +296,8 @@ GameObject:
   - component: {fileID: 7303318690823352167}
   - component: {fileID: 7303318690823352164}
   - component: {fileID: 7303318690823352165}
-  m_Layer: 11
+  - component: {fileID: 1105856500744557612}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_7 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,8 +355,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6304514137468551400, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -389,6 +406,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1105856500744557612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318690823352155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318690843625866
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +433,7 @@ GameObject:
   - component: {fileID: 7303318690843625879}
   - component: {fileID: 7303318690843625876}
   - component: {fileID: 7303318690843625878}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Carton_BreakOnStomp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +449,7 @@ Transform:
   m_GameObject: {fileID: 7303318690843625866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.68, y: -3.694, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 7303318691904147101}
   - {fileID: 7303318692504204001}
@@ -502,7 +534,8 @@ GameObject:
   - component: {fileID: 7303318691120916110}
   - component: {fileID: 7303318691120916111}
   - component: {fileID: 7303318691120916108}
-  m_Layer: 11
+  - component: {fileID: 8821663809831428253}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,8 +593,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 8612146622327811685, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -611,6 +644,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8821663809831428253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318691120916098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318691232120085
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +671,8 @@ GameObject:
   - component: {fileID: 7303318691232120081}
   - component: {fileID: 7303318691232120086}
   - component: {fileID: 7303318691232120087}
-  m_Layer: 11
+  - component: {fileID: 6692799564395710222}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,8 +730,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 6177332557279357192, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -732,6 +781,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6692799564395710222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318691232120085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318691481195546
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +808,8 @@ GameObject:
   - component: {fileID: 7303318691481195558}
   - component: {fileID: 7303318691481195559}
   - component: {fileID: 7303318691481195556}
-  m_Layer: 11
+  - component: {fileID: 2042233002794031947}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,8 +867,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 6177332557279357192, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -853,6 +918,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2042233002794031947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318691481195546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318691676581534
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +945,8 @@ GameObject:
   - component: {fileID: 7303318691676581530}
   - component: {fileID: 7303318691676581531}
   - component: {fileID: 7303318691676581528}
-  m_Layer: 11
+  - component: {fileID: 1098098087253759738}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,8 +1004,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6304514137468551400, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -974,6 +1055,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1098098087253759738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318691676581534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318691680075064
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +1080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7303318691680075067}
   - component: {fileID: 7303318691680075066}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1129,7 @@ GameObject:
   - component: {fileID: 7303318691891064872}
   - component: {fileID: 7303318691891064878}
   - component: {fileID: 7303318691891064873}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: StompTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7303318691904147101}
   - component: {fileID: 7303318691904147100}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Whole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1188,8 +1284,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -2610281642426469027, guid: baa9074343383c541a916edc233233a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1214,7 +1310,8 @@ GameObject:
   - component: {fileID: 7303318691926016167}
   - component: {fileID: 7303318691926016164}
   - component: {fileID: 7303318691926016165}
-  m_Layer: 11
+  - component: {fileID: 8144301472278743556}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,8 +1369,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4095162191933701754, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1323,6 +1420,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8144301472278743556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318691926016155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318692270214317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1447,8 @@ GameObject:
   - component: {fileID: 7303318692270214313}
   - component: {fileID: 7303318692270214318}
   - component: {fileID: 7303318692270214319}
-  m_Layer: 11
+  - component: {fileID: 4460669468866418303}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_7 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,8 +1506,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6304514137468551400, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1444,6 +1557,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4460669468866418303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318692270214317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318692488036343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,7 +1584,8 @@ GameObject:
   - component: {fileID: 7303318692488036339}
   - component: {fileID: 7303318692488036336}
   - component: {fileID: 7303318692488036337}
-  m_Layer: 11
+  - component: {fileID: 8106916721752896587}
+  m_Layer: 12
   m_Name: Bookshelf_Broken_7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,8 +1643,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -297432249
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -6304514137468551400, guid: 5102e77fb462cac42b2bdc3684fb160f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1565,6 +1694,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8106916721752896587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303318692488036343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d83529f6f892a43ab6e62bf50c33ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayAmount: 0.75
+  targetLayer: 11
+  startOnEnable: 1
 --- !u!1 &7303318692504204006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7303318692504204001}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
