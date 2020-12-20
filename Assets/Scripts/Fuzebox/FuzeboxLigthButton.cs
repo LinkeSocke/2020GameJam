@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Malee.List;
+using UnityEngine.Events;
 
 public class FuzeboxLigthButton : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class FuzeboxLigthButton : MonoBehaviour
     FuzeboxActionSequence correctActionSequence;
 
     FuzeboxActionList correctSequenceList;
+
+    [SerializeField]
+    private UnityEvent OnCorrectSequence;
+
+    [SerializeField]
+    private UnityEvent OnIncorrectSequence;
+
 
     private void Awake()
     {
@@ -28,9 +36,18 @@ public class FuzeboxLigthButton : MonoBehaviour
     public void Submit()
     {
         if (CheckCorrectSequence())
+        {
             Debug.Log("Correct");
+
+            GameManager.Instance.FinishLevel();
+
+            OnCorrectSequence?.Invoke();
+        }
         else
+        {
             Debug.Log("Incorrect");
+            OnIncorrectSequence?.Invoke();
+        }
     }
 
     bool CheckCorrectSequence()
