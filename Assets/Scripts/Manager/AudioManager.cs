@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
                 return GetRandomClip(glassCollection);
             case AUDIO_SOURCE_TYPE.WOOD:
                 if (woodCollection == null) goto default;
-                return GetRandomClip(glassCollection);
+                return GetRandomClip(woodCollection);
             case AUDIO_SOURCE_TYPE.KRIMSKRAMS:
                 if (krimskramsCollection == null) goto default;
                 return GetRandomClip(krimskramsCollection);

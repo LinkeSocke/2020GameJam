@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80b1cf276bbd6944961f90e33f2f87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collection: {fileID: 0}
-  glassCollection: {fileID: 0}
-  woodCollection: {fileID: 0}
+  collection: {fileID: 11400000, guid: 694f21fc7a34e714d9c699bf341fa1e8, type: 2}
+  glassCollection: {fileID: 11400000, guid: 5eb7bc2c929f51345bdc192d36cace1e, type: 2}
+  woodCollection: {fileID: 11400000, guid: 694f21fc7a34e714d9c699bf341fa1e8, type: 2}
   krimskramsCollection: {fileID: 0}
-  paperCollection: {fileID: 0}
+  paperCollection: {fileID: 11400000, guid: 1ec07e0140f2d464ea34dbb6ff5d788e, type: 2}
