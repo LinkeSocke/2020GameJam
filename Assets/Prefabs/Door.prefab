@@ -134,7 +134,7 @@ MonoBehaviour:
   displayTooltip: 1
   interactButtonSprite: {fileID: 21300000, guid: 05f553ff90123ee499512676c04ac2ed, type: 3}
   interactButtonMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  interactSpriteOffset: 2
+  interactSpriteOffset: 0.25
   interactButtonLayer: 10
   playerDetectionRange: 3
   OnInteract:
