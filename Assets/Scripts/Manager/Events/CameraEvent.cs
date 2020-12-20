@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CameraEvent : MonoBehaviour, IGameEvent
 {
-    public GameObject cameraRouteController;
+    private GameObject cameraRouteController;
 
-    private void Start()
+    public void Initialize(GameObject cameraRouteController)
     {
+        this.cameraRouteController = cameraRouteController;
         cameraRouteController.SetActive(false);
     }
 
