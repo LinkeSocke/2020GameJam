@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 4523658931933064186}
   - component: {fileID: 4523658931933064187}
   - component: {fileID: 4523658931933064184}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Lamp_BreakOnStompImpact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
