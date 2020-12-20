@@ -83,7 +83,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!70 &5947481335809938057
 CapsuleCollider2D:
@@ -220,7 +220,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!70 &5947481335824814201
 CapsuleCollider2D:
@@ -406,7 +406,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!70 &5947481336236755565
 CapsuleCollider2D:
@@ -510,7 +510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wholeObject: {fileID: 5947481337126406078}
   brokenObject: {fileID: 5947481336180476251}
-  colliders: []
+  colliders:
+  - {fileID: 5947481336790184553}
 --- !u!114 &5947481336790184552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +648,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8878551659562866335, guid: 7a3cb392d1c9263419f8475940744e68, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -655,7 +656,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &5947481337389750115
 GameObject:
@@ -738,7 +739,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!61 &5947481337389750116
 BoxCollider2D:
