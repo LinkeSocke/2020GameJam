@@ -11,6 +11,7 @@ public class KeycardPickup : MonoBehaviour
     {
         var sprite = GetComponent<SpriteRenderer>();
         sprite.color = keycard.keycardColor;
+        sprite.sprite = keycard.keycardSprite;
     }
 
     public void Pickup()

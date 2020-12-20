@@ -11,15 +11,32 @@ public class StompDetection : MonoBehaviour
     [SerializeField]
     public UnityEvent onStomp;
 
+    private bool isChecking = false;
+
+    private void Awake()
+    {
+        StartCoroutine(DoWaitForDetection(.5f));
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.GetComponent<IBreakable>() != null)
+        if (isChecking)
         {
-            durability--;
-            if (durability <= 0)
+            if (collision.gameObject.tag == "Player" || collision.gameObject.GetComponent<IBreakable>() != null)
             {
-                onStomp?.Invoke();
+                durability--;
+                if (durability <= 0)
+                {
+                    onStomp?.Invoke();
+                }
             }
         }
+    }
+
+    public IEnumerator DoWaitForDetection(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        isChecking = true;
+
     }
 }
